@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>swiper2 demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link swiper2's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper{
+      width: 60%;
+      height: 60%;
+    }
+
+    .swiper-slide{
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* transition: opacity 10s; Add a transition for smoother image change */
+    }
+
+    .swiper-slide img:hover{
+      opacity: 0; /* Hide the default image on hover */
+    }
+
+    .swiper-slide .hover-image {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide:hover .hover-image{
+      display: block; /* Show the hover image on hover */
+    }
+
+    
+    .swiper-slide:hover img{
+      opacity: 1; /* Reduce opacity of the default image on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- swiper2 -->
+  <div class="swiper myswiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://us.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dweedab17f/images/hi-res/est23205_black_1.jpg?sw=400&sh=600" alt="Default Image">
+        <img class="hover-image" src="https://us.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwccb7f055/images/hi-res/ala230903_turquoise_1.jpg?sw=400&sh=600" alt="Hover Image">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://us.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dweedab17f/images/hi-res/est23205_black_1.jpg?sw=400&sh=600" alt="Default Image">
+        <img class="hover-image" src="https://us.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwccb7f055/images/hi-res/ala230903_turquoise_1.jpg?sw=400&sh=600" alt="Hover Image">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- swiper2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize swiper2 -->
+  <script>
+    var swiper = new swiper(".myswiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

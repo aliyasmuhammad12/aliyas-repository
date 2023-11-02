@@ -1,0 +1,157 @@
+body{
+    /* background-image: url("https://khaadi.com/media/wysiwyg/khaadi/01-01-landingpage/Country_Landing-0602-1920x1080.jpg"); */
+    background-size: cover !important;
+    padding: 0;
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.form{
+    max-width: 350px;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+}
+.logo{
+    width: 100px;
+    padding-left: 25px;
+    
+}
+.formdata {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 80px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.preheader{
+    width: 100%;
+    height: 20px;
+    background-color: #F1F1F1;
+}
+.header{
+    height: 55px;
+    background-color: #b3afaf;
+}
+.nav {
+    background-color: #FFFFFF;
+    /* overflow: hidden; */
+    height: 55px;
+  }
+  
+  
+  .nav a {
+    /* display: flex; */
+    /* float: right; */
+    position: relative;
+    left: 40%;
+    bottom: 50%;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main{
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+   
+  }
+ 
+ .main img{
+    width: 300px;
+ }
+
+ /* swiper2
+  .swiper2 {
+      width: 40%;
+      height: 60%;
+    }
+
+    .swiper2-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper2-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* transition: opacity 10s; Add a transition for smoother image change */
+    }
+
+    .swiper2-slide img:hover {
+      opacity: 0; /* Hide the default image on hover */
+    }
+
+    .swiper2-slide .hover-image {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper2-slide:hover .hover-image {
+      display: block; /* Show the hover image on hover */
+    }
+
+    
+    
+    .swiper2-slide:hover img {
+      opacity: 1; /* Reduce opacity of the default image on hover */
+    }
